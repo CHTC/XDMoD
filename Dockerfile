@@ -8,6 +8,7 @@ RUN dnf module -y install nodejs:16
 RUN dnf install -y https://github.com/ubccr/xdmod/releases/download/v10.5.0-1.0/xdmod-10.5.0-1.0.el8.noarch.rpm
 
 RUN yum install -y mariadb-server sendmail libreoffice chromium-headless php-fpm
+RUN yum install -y slurm
 
 COPY ./configuration_files/mysql-confs/mariadb-server.cnf /etc/my.cnf.d/mariadb-server.cnf
 RUN /usr/libexec/mysql-prepare-db-dir mysql mysql
@@ -18,6 +19,7 @@ RUN chown -Rh mysql:mysql /var/lib/mysql/
 COPY ./configuration_files/supervisord-confs/mysqld.conf /etc/supervisord.d/mysqld.conf
 COPY ./configuration_files/supervisord-confs/apache-server-runner.conf /etc/supervisord.d/apache-server-runner.conf
 COPY ./configuration_files/supervisord-confs/php-fpm-runner.conf /etc/supervisord.d/php-fpm-runner.conf
+COPY ./configuration_files/supervisord-confs/munge.conf /etc/supervisord.d/munge.conf
 
 # Load in xdmod configurations
 COPY ./xdmod /etc/xdmod/
