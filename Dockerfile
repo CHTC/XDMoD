@@ -14,6 +14,7 @@ COPY ./configuration_files/mysql-confs/mariadb-server.cnf /etc/my.cnf.d/mariadb-
 RUN /usr/libexec/mysql-prepare-db-dir mysql mysql
 COPY ./mysql /var/lib/mysql/
 RUN chown -Rh mysql:mysql /var/lib/mysql/
+RUN chmod g-w /run
 
 # Create supervisord confs for required daemons
 COPY ./configuration_files/supervisord-confs/mysqld.conf /etc/supervisord.d/mysqld.conf
