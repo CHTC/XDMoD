@@ -1,0 +1,77 @@
+{
+    "#": "Contains the start and end time for a specific set of vcpus and memory for a cloud host.",
+
+    "table_definition": {
+        "name": "cloud_resource_specs",
+        "engine": "InnoDB",
+        "comment": "Contains the start and end time for a specific set of vcpus and memory for a cloud host",
+        "columns": [
+            {
+                "name": "host_id",
+                "type": "int(11)",
+                "nullable": false
+            },
+            {
+                "name": "resource_id",
+                "type": "int(11)",
+                "nullable": false,
+                "comment": "Unknown = -1 for global dimensions"
+            },
+            {
+                "name": "memory_mb",
+                "type": "int(11)",
+                "nullable": false,
+                "comment": "What to show the user"
+            },
+            {
+                "name": "vcpus",
+                "type": "int(5)",
+                "nullable": false
+            },
+            {
+                "name": "start_date_ts",
+                "type": "int(12) unsigned",
+                "nullable": false
+            },
+            {
+                "name": "end_date_ts",
+                "type": "int(12) unsigned",
+                "nullable": true
+            },
+            {
+                "name": "start_day_id",
+                "type": "int(11) unsigned",
+                "nullable": false
+            },
+            {
+                "name": "end_day_id",
+                "type": "int(11) unsigned",
+                "nullable": true
+            },
+            {
+                "name": "last_modified",
+                "type": "timestamp",
+                "nullable": false,
+                "default": "CURRENT_TIMESTAMP",
+                "extra": "on update CURRENT_TIMESTAMP"
+            }
+        ],
+        "indexes": [
+            {
+                "name": "PRIMARY",
+                "columns": [
+                    "resource_id",
+                    "host_id",
+                    "start_day_id"
+                ],
+                "is_unique": true
+            },
+            {
+                "name": "index_last_modified",
+                "columns": [
+                    "last_modified"
+                ]
+            }
+        ]
+    }
+}

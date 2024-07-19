@@ -1,0 +1,28 @@
+{
+      "#": "@@session.time_zone is used instead of using the time zone listed in resources.json to keep consistency",
+      "#": "with how time zone conversion works for other places in the cloud realm",
+      "table_definition": {
+          "$ref": "${table_definition_dir}/cloud_common/staging_resource_specifications.json#/table_definition"
+      },
+      "source_query": {
+          "records": {
+              "resource_id": "raw.resource_id",
+              "host_id": "COALESCE(h.host_id, 1)",
+              "vcpus": "raw.vcpus",
+              "memory_mb": "raw.memory_mb",
+              "fact_date": "DATE(CONVERT_TZ(STR_TO_DATE(raw.fact_date, '%Y-%m-%dT%H:%i:%sZ'), '+00:00', @@session.time_zone))"
+          },
+          "joins": [{
+              "name": "raw_resource_specs",
+              "schema": "${SOURCE_SCHEMA}",
+              "alias": "raw"
+          },
+          {
+              "name": "host",
+              "schema": "${SOURCE_SCHEMA}",
+              "alias": "h",
+              "type": "LEFT",
+              "on": "raw.resource_id = h.resource_id AND raw.hostname = h.hostname"
+          }]
+      }
+}

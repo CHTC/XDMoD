@@ -1,0 +1,51 @@
+{
+    "#": "Images are specific to a resource",
+
+    "table_definition": {
+        "name": "image",
+        "engine": "InnoDB",
+        "comment": "Images used by cloud instances",
+        "columns": [
+            {
+                "name": "resource_id",
+                "type": "int(11)",
+                "nullable": false
+            },
+            {
+                "name": "image_id",
+                "type": "int(11)",
+                "nullable": false,
+                "extra": "auto_increment",
+                "comment": "Auto-increment relative to resource_id. Unknown = 1"
+            },
+            {
+                "name": "image",
+                "type": "varchar(64)",
+                "nullable": false,
+                "default": "Unknown"
+            }
+        ],
+
+        "#": "Note that the primary key is (resource, image) rather than image_id so we can",
+        "#": "take advantage of ON DUPLICATE KEY UPDATE to update existing entries and still use",
+        "#": "auto_increment for new entries.",
+
+        "indexes": [
+            {
+                "name": "PRIMARY",
+                "columns": [
+                    "resource_id",
+                    "image"
+                ],
+                "is_unique": true
+            },
+            {
+                "name": "autoincrement_key",
+                "columns": [
+                    "image_id"
+                ],
+                "is_unique": true
+            }
+        ]
+    }
+}

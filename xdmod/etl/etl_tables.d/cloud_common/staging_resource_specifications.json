@@ -1,0 +1,52 @@
+{
+    "#": "This table contains a specific set of vcpus and memory size for a host for",
+    "#": "a day. There should be no more than one record for a host on a day.",
+
+    "table_definition": {
+        "name": "staging_resource_specifications",
+        "engine": "InnoDB",
+        "comment": "Contains a specific set of vcpus and memory size for a host for a day",
+        "columns": [
+            {
+                "name": "host_id",
+                "type": "int(11)",
+                "nullable": false
+            },
+            {
+                "name": "resource_id",
+                "type": "int(11)",
+                "nullable": false,
+                "comment": "Unknown = -1 for global dimensions"
+            },
+            {
+                "name": "memory_mb",
+                "type": "int(11)",
+                "nullable": false,
+                "comment": "Amount of memory available on the associated node."
+            },
+            {
+                "name": "vcpus",
+                "type": "int(5)",
+                "nullable": false,
+                "default": null,
+                "comment": "Number of vcpus available on the associated node."
+            },
+            {
+                "name": "fact_date",
+                "type": "date",
+                "nullable": false
+            }
+        ],
+        "indexes": [
+            {
+                "name": "PRIMARY",
+                "columns": [
+                    "resource_id",
+                    "host_id",
+                    "fact_date"
+                ],
+                "is_unique": true
+            }
+        ]
+    }
+}

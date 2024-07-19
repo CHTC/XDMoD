@@ -1,0 +1,51 @@
+{
+    "#": "Hostnames are specific to a resource",
+
+    "table_definition": {
+        "name": "host",
+        "engine": "InnoDB",
+        "comment": "Hostnames for each resource",
+        "columns": [
+            {
+                "name": "resource_id",
+                "type": "int(11)",
+                "nullable": false
+            },
+            {
+                "name": "host_id",
+                "type": "int(11)",
+                "nullable": false,
+                "extra": "auto_increment",
+                "comment": "Auto-increment relative to resource_id. Unknown = 1"
+            },
+            {
+                "name": "hostname",
+                "type": "varchar(64)",
+                "nullable": false,
+                "default": "Unknown"
+            }
+        ],
+
+        "#": "Note that the primary key is (resource, hostname) rather than host_id so we can",
+        "#": "take advantage of ON DUPLICATE KEY UPDATE to update existing entries and still use",
+        "#": "auto_increment for new entries.",
+
+        "indexes": [
+            {
+                "name": "PRIMARY",
+                "columns": [
+                    "resource_id",
+                    "hostname"
+                ],
+                "is_unique": true
+            },
+            {
+                "name": "autoincrement_key",
+                "columns": [
+                    "host_id"
+                ],
+                "is_unique": true
+            }
+        ]
+    }
+}

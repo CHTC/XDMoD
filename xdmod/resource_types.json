@@ -1,0 +1,73 @@
+{
+    "resource_types": {
+        "HPC": {
+            "description": "High-performance computing",
+            "realms": [
+                "Jobs"
+            ]
+        },
+        "HTC": {
+            "description": "High-throughput computing",
+            "realms": [
+                "Jobs"
+            ]
+        },
+        "DIC": {
+            "description": "Data-intensive computing",
+            "realms": [
+                "Jobs"
+            ]
+        },
+        "Grid": {
+            "description": "Grid of resources",
+            "realms": [
+            ]
+        },
+        "Cloud": {
+            "description": "Cloud resource",
+            "realms": [
+                "Cloud"
+            ]
+        },
+        "Vis": {
+            "description": "Visualization system",
+            "realms": [
+                "Jobs"
+            ]
+        },
+        "VM": {
+            "description": "Virtual Machine system",
+            "realms": [
+                "Cloud"
+            ]
+        },
+        "Tape": {
+            "description": "Tape storage resource",
+            "realms": [
+                "Storage"
+            ]
+        },
+        "Disk": {
+            "description": "Disk storage resource",
+            "realms": [
+                "Storage"
+            ]
+        },
+        "StGrid": {
+            "description": "Storage grid",
+            "realms": [
+                "Storage"
+            ]
+        },
+        "US": {
+            "description": "User Support",
+            "realms": [
+            ]
+        },
+        "Gateway": {
+            "description": "Web-based access to CI resources",
+            "realms": [
+            ]
+        }
+    }
+}

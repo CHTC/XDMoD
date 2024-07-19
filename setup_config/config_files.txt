@@ -1,0 +1,6 @@
+/etc/xdmod/portal_settings.ini
+/etc/php.ini
+/etc/httpd/conf/httpd.conf
+/etc/httpd/conf.d/xdmod.conf
+/etc/httpd/conf.d/ssl.conf
+/etc/mail/sendmail.mc

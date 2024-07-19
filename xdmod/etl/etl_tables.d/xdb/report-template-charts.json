@@ -1,0 +1,57 @@
+{
+    "table_definition": {
+        "name": "ReportTemplateCharts",
+        "engine": "InnoDB",
+        "charset": "utf8mb4",
+        "collation": "utf8mb4_general_ci",
+        "columns": [
+            {
+                "name": "template_id",
+                "type": "int(11)",
+                "nullable": false
+            },
+            {
+                "name": "chart_id",
+                "type": "text",
+                "nullable": true
+            },
+            {
+                "name": "ordering",
+                "type": "int(11)",
+                "nullable": false
+            },
+            {
+                "name": "chart_date_description",
+                "type": "text",
+                "nullable": true
+            },
+            {
+                "name": "chart_title",
+                "type": "varchar(100)",
+                "nullable": true
+            },
+            {
+                "name": "chart_drill_details",
+                "type": "text",
+                "nullable": true
+            },
+            {
+                "name": "timeframe_type",
+                "type": "text",
+                "nullable": true
+            }
+        ],
+        "indexes": [
+            {
+                "name": "Unique",
+                "columns": [
+                    "template_id",
+                    "ordering"
+                ],
+                "type": "BTREE",
+                "is_unique": true
+            }
+        ],
+        "triggers": []
+    }
+}

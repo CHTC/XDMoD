@@ -1,0 +1,40 @@
+{
+    "module": "xdmod",
+    "defaults": {
+        "global": {
+            "endpoints": {
+                "destination": {
+                    "type": "mysql",
+                    "name": "Shredder/Staging Database",
+                    "config": "database",
+                    "schema": "mod_shredder"
+                }
+            }
+        }
+    },
+    "shredder-bootstrap": [
+        {
+            "name": "create-tables",
+            "description": "Create shredder tables",
+            "namespace": "ETL\\Maintenance",
+            "class": "ManageTables",
+            "options_class": "MaintenanceOptions",
+            "definition_file_list": [
+                "jobs/shredder/job-lsf.json",
+                "jobs/shredder/job-pbs.json",
+                "jobs/shredder/job-sge.json",
+                "jobs/shredder/job.json"
+            ]
+        },
+        {
+            "name": "create-slurm-table",
+            "description": "Create slurm shredder table",
+            "namespace": "ETL\\Maintenance",
+            "class": "ExecuteSql",
+            "options_class": "MaintenanceOptions",
+            "sql_file_list": [
+                "jobs/shredder/job-slurm.sql"
+            ]
+        }
+    ]
+}
