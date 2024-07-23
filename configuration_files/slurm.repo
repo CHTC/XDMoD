@@ -1,0 +1,18 @@
+# THIS FILE IS MANAGED BY PUPPET #
+
+# Template:   yum/repo.erb
+# Call Stack:
+#   node default ->
+#   Class[server] ->
+#   Class[server::yum] ->
+#   Class[yum] ->
+#   Yum::Repos_d[slurm] ->
+#   System::Template[/etc/yum.repos.d/slurm.repo]
+
+[slurm-23.02.6]
+name=Slurm 23.02.6 RPMs compiled by CHTC
+enabled=1
+baseurl=http://archive.chtc.wisc.edu/hpc/el8/rpms/slurm/slurm-23.02.6-centos8stream
+priority=50
+gpgcheck=0
+
