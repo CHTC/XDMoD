@@ -12,6 +12,7 @@ RUN yum install -y mariadb-server sendmail libreoffice chromium-headless php-fpm
 # Copy in CHTC Slurm repo for 23.x Slurm build, and install
 COPY ./configuration_files/slurm.repo /etc/yum.repos.d/slurm.repo
 RUN yum install -y slurm
+RUN adduser -r slurm
 
 COPY ./configuration_files/mysql-confs/mariadb-server.cnf /etc/my.cnf.d/mariadb-server.cnf
 RUN /usr/libexec/mysql-prepare-db-dir mysql mysql
