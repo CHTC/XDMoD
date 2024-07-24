@@ -1,8 +1,8 @@
 #!/bin/bash -e
 
-SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+#SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
-for file in $(cat $SCRIPT_DIR/config_files.txt); do cat $file | envsubst "$(cat $SCRIPT_DIR/config_vars.txt)" > $file; done
+#for file in $(cat $SCRIPT_DIR/config_files.txt); do cat $file | envsubst "$(cat $SCRIPT_DIR/config_vars.txt)" > $file; done
 
 sed -i s/\$XDMOD_ADMIN_PASSPLAIN/$(cat $XDMOD_ADMIN_PASSWORD_PATH)/ /etc/xdmod/portal_settings.ini
 

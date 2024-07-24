@@ -30,6 +30,7 @@ COPY ./configuration_files/supervisord-confs/munge.conf /etc/supervisord.d/munge
 COPY ./xdmod /etc/xdmod/
 RUN chown -Rh xdmod:xdmod /etc/xdmod
 RUN chmod -R o=rx /etc/xdmod
+RUN chmod -R o-r /etc/xdmod
 RUN chmod -R o=rx /usr/share/xdmod/
 
 # Set ability to change date.timezone in php.ini with envvars
@@ -50,6 +51,7 @@ RUN rm -f /etc/php-fpm.d/www.conf
 # Load in setup script and supervisor conf for running the script
 COPY ./setup_config /setup_config
 COPY ./configuration_files/supervisord-confs/setup.conf /etc/supervisord.d/setup.conf
+COPY container-conf-init.sh /etc/osg/image-init.d/90-container-conf-init.sh
 
 # Copy in sendmail configuration file
 COPY ./configuration_files/sendmail-confs/sendmail.mc /etc/mail/sendmail.mc
