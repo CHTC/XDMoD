@@ -23,7 +23,7 @@ dnl #
 dnl # Uncomment and edit the following line if your outgoing mail needs to
 dnl # be sent out through an external mail server:
 dnl #
-define(`SMART_HOST', `smtp.wiscmail.wisc.edu')dnl
+dnl define(`SMART_HOST', `smtp.your.provider')dnl
 dnl #
 define(`confDEF_USER_ID', ``8:12'')dnl
 dnl define(`confAUTO_REBUILD')dnl
