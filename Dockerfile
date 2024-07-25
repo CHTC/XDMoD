@@ -30,7 +30,6 @@ COPY ./configuration_files/supervisord-confs/munge.conf /etc/supervisord.d/munge
 COPY ./xdmod /etc/xdmod/
 RUN chown -Rh xdmod:xdmod /etc/xdmod
 RUN chmod -R o=rx /etc/xdmod
-RUN chmod -R o-r /etc/xdmod
 RUN chmod -R o=rx /usr/share/xdmod/
 
 # Set ability to change date.timezone in php.ini with envvars
