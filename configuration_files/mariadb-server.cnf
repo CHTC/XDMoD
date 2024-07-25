@@ -23,6 +23,8 @@ max_allowed_packet = 1G
 group_concat_max_len = 16M
 innodb_stats_on_metadata = off
 innodb_file_per_table = On
+innodb_buffer_pool_size = $MYSQL_BUFFER_POOL_SIZE
+innodb_log_file_size = $MYSQL_LOG_FILE_SIZE
 
 #
 # * Galera-related settings
