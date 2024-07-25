@@ -52,6 +52,7 @@ COPY ./setup_config /setup_config
 COPY ./configuration_files/supervisord-confs/setup.conf /etc/supervisord.d/setup.conf
 COPY container-conf-init.sh /etc/osg/image-init.d/90-container-conf-init.sh
 
+
 # Copy in sendmail configuration file
 COPY ./configuration_files/sendmail-confs/sendmail.mc /etc/mail/sendmail.mc
 
