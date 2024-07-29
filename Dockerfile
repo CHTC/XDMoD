@@ -22,7 +22,7 @@ RUN chmod g-w /run
 
 # Create supervisord confs for required daemons
 COPY ./configuration_files/supervisord-confs/mysqld.conf /etc/supervisord.d/mysqld.conf
-COPY ./configuration_files/supervisord-confs/apache-server-runner.conf /etc/supervisord.d/apache-server-runner.conf
+#COPY ./configuration_files/supervisord-confs/apache-server-runner.conf /etc/supervisord.d/apache-server-runner.conf
 COPY ./configuration_files/supervisord-confs/php-fpm-runner.conf /etc/supervisord.d/php-fpm-runner.conf
 COPY ./configuration_files/supervisord-confs/munge.conf /etc/supervisord.d/munge.conf
 
@@ -67,5 +67,5 @@ ENV APACHE_PORT='443'
 ENV APACHE_TLSCERT_PATH='APACHE_TLSCERT_PATH'
 ENV APACHE_TLSKEY_PATH='APACHE_TLSKEY_PATH'
 ENV MYSQL_ROOT_PASS_PATH='MYSQL_ROOT_PASS_PATH'
-ENV MYSQL_SERVER_MEM_GIGS='MYSQL_SERVERMEM'
+ENV MYSQL_SERVER_MEM_GIGS='MYSQL_SERVER_MEM_GIGS'
 ENV PHP_TIMEZONE='America/Chicago'

@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/bash
 
 #SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
@@ -11,5 +11,6 @@ chmod o-r $XDMOD_ADMIN_PASSWORD_PATH
 
 mysql --password="" -Be "SET PASSWORD FOR 'xdmod'@'localhost' = PASSWORD('$(cat $XDMOD_ADMIN_PASSWORD_PATH)'); SET PASSWORD FOR 'root'@'localhost' = PASSWORD('$(cat $MYSQL_ROOT_PASS_PATH)'); FLUSH PRIVILEGES;"
 
+httpd
 
 # /etc/mail/make
