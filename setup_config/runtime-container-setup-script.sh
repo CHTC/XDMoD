@@ -1,8 +1,4 @@
-#!/bin/bash
-
-#SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-
-#for file in $(cat $SCRIPT_DIR/config_files.txt); do cat $file | envsubst "$(cat $SCRIPT_DIR/config_vars.txt)" > $file; done
+#!/bin/sh
 
 sed -i s/\$XDMOD_ADMIN_PASSPLAIN/$(cat $XDMOD_ADMIN_PASSWORD_PATH)/ /etc/xdmod/portal_settings.ini
 
@@ -11,7 +7,7 @@ chmod o-r $XDMOD_ADMIN_PASSWORD_PATH
 
 supervisorctl start mysql
 
-while [ ! $(mysqladmin ping 2>/dev/null)];
+while [ ! $(mysqladmin ping 2>/dev/null) ];
 do
         sleep 1;
 done
