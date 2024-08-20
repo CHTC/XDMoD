@@ -7,5 +7,5 @@ export MYSQL_LOG_FILE_SIZE=$(($MYSQL_BUFFER_POOL_SIZE / 4))
 for file in $(cat /setup_config/config_files.txt); do cat $file | envsubst "$(cat /setup_config/config_vars.txt)" > $file; done
 
 if [[ $(ls -m /var/lib/mysql) == "lost+found" ]]; then
-   cat "database empty, setting up" > /xdmod-test-log
+   cat "database empty, setting up" > ./xdmod-test-log
 fi
