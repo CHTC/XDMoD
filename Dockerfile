@@ -17,7 +17,7 @@ RUN yum install -y slurm
 RUN adduser -r slurm
 
 COPY ./configuration_files/mysql-confs/mariadb-server.cnf /etc/my.cnf.d/mariadb-server.cnf
-COPY ./configuration_files/mysql/client.cnf /etc/my.cnf.d/client.cnf
+COPY ./configuration_files/mysql-confs/client.cnf /etc/my.cnf.d/client.cnf
 #RUN /usr/libexec/mysql-prepare-db-dir mysql mysql
 COPY ./mysql /var/lib/mysql/mysql
 RUN chown -Rh mysql:mysql /var/lib/mysql/mysql
