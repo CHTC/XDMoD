@@ -9,8 +9,11 @@ sed -i s/\$XDMOD_ADMIN_PASSPLAIN/$(cat $XDMOD_ADMIN_PASSWORD_PATH)/ /etc/xdmod/p
 chmod o-r $MYSQL_ROOT_PASS_PATH
 chmod o-r $XDMOD_ADMIN_PASSWORD_PATH
 
-mysql --password="" -Be "SET PASSWORD FOR 'xdmod'@'localhost' = PASSWORD('$(cat $XDMOD_ADMIN_PASSWORD_PATH)'); SET PASSWORD FOR 'root'@'localhost' = PASSWORD('$(cat $MYSQL_ROOT_PASS_PATH)'); FLUSH PRIVILEGES;"
+supervisorctl start mysql
 
+mysql --password="" -Be "DELETE FROM mysql.user WHERE User='root' AND Host NOT IN ('localhost', '127.0.0.1', '::1'); SET PASSWORD FOR 'xdmod'@'localhost' = PASSWORD('$(cat $XDMOD_ADMIN_PASSWORD_PATH)'); SET PASSWORD FOR 'root'@'localhost' = PASSWORD('$(cat $MYSQL_ROOT_PASS_PATH)'); FLUSH PRIVILEGES;"
+
+#supervisorctl start php-fpm-server-runner
 # httpd
 
 # /etc/mail/make
