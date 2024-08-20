@@ -11,6 +11,6 @@ chmod o-r $XDMOD_ADMIN_PASSWORD_PATH
 
 mysql --password="" -Be "SET PASSWORD FOR 'xdmod'@'localhost' = PASSWORD('$(cat $XDMOD_ADMIN_PASSWORD_PATH)'); SET PASSWORD FOR 'root'@'localhost' = PASSWORD('$(cat $MYSQL_ROOT_PASS_PATH)'); FLUSH PRIVILEGES;"
 
-httpd
+# httpd
 
 # /etc/mail/make

@@ -6,6 +6,8 @@ RUN dnf module -y reset nodejs
 RUN dnf module -y install nodejs:16
 
 RUN dnf install -y https://github.com/ubccr/xdmod/releases/download/v10.5.0-1.0/xdmod-10.5.0-1.0.el8.noarch.rpm
+# Give xdmod user a shell to allow for running cron jobs
+RUN usermod -s /bin/bash xdmod
 
 RUN yum install -y mariadb-server sendmail libreoffice chromium-headless php-fpm
 
@@ -15,9 +17,10 @@ RUN yum install -y slurm
 RUN adduser -r slurm
 
 COPY ./configuration_files/mysql-confs/mariadb-server.cnf /etc/my.cnf.d/mariadb-server.cnf
+COPY ./configuration_files/mysql/client.cnf /etc/my.cnf.d/client.cnf
 #RUN /usr/libexec/mysql-prepare-db-dir mysql mysql
-COPY ./mysql /var/lib/mysql/
-RUN chown -Rh mysql:mysql /var/lib/mysql/
+COPY ./mysql /var/lib/mysql/mysql
+RUN chown -Rh mysql:mysql /var/lib/mysql/mysql
 RUN chmod g-w /run
 
 # Create supervisord confs for required daemons
