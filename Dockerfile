@@ -53,7 +53,6 @@ RUN rm -f /etc/php-fpm.d/www.conf
 # Load in setup script and supervisor conf for running the script
 COPY ./setup_config /setup_config
 COPY ./configuration_files/supervisord-confs/setup.conf /etc/supervisord.d/setup.conf
-COPY container-conf-init.sh /etc/osg/image-init.d/90-container-conf-init.sh
 
 
 # Copy in sendmail configuration file
