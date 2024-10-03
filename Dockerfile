@@ -51,7 +51,7 @@ RUN rm -f /etc/php-fpm.d/www.conf
 # Load in setup script and supervisor conf for running the script
 COPY ./setup_and_scripts /setup_and_scripts
 RUN chmod u+x /setup_and_scripts/runtime-container-setup-script.sh
-RUN chmod u+x /setup_and_scripts/slurm_shred_ingest_script.sh
+RUN chmod u+x /setup_and_scripts/htcss_shred_ingest_script.sh
 COPY ./configuration_files/supervisord-confs/setup.conf /etc/supervisord.d/setup.conf
 
 # Load in cronfile for shred/ingest
@@ -66,8 +66,6 @@ ENV XDMOD_ADMIN_LASTNAME='XDMOD_ADMIN_LASTNAME'
 ENV XDMOD_ADMIN_EMAIL='XDMOD_ADMIN_EMAIL'
 ENV XDMOD_ADMIN_USERNAME='XDMOD_ADMIN_USERNAME'
 ENV XDMOD_ADMIN_PASSWORD_PATH='XDMOD_ADMIN_PASSWORD_PATH'
-ENV XDMOD_SLURM_RESOURCE_NAME='XDMOD_SLURM_RESOURCE_NAME'
-ENV XDMOD_SLURM_RESOURCE_CLUSTER='XDMOD_SLURM_RESOURCE_CLUSTER'
 ENV APACHE_HOSTNAME='localhost'
 ENV APACHE_PORT='443'
 ENV APACHE_TLSCERT_PATH='APACHE_TLSCERT_PATH'
