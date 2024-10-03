@@ -1,1 +1,2198 @@
-[]
+[
+    {
+        "resource": "ATLab testing node",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "AEI-Hypatia-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "AGLT2_CE_2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "AGLT2_CE_3",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "AGLT2_CE_4",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "AGLT2_SL7",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "AGLT2_TEST_CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Alabama-CHPC-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "AMNH-ARES",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "AMNH-ARES-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "AMNH-HEL",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "AMNH-HEL-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "AMNH-Mendel",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "AMNH-Mendel-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "OSG_US_AMNH_ARES",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "OSG_US_AMNH_HEL",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "ASGC-IGWN-CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "ASU-Sol-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Baylor-Kodiak-CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "BELLARMINE_TIER2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "BEOCAT-SLATE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "KSU-Beocat-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "BNL_ATLAS_01",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "BNL_ATLAS_02",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "BNL_ATLAS_03",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "BNL_ATLAS_04",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "BNL_ATLAS_06",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "BNL_ATLAS_07",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "BNL_ATLAS_08",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "BNL_ATLAS_1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "BNL_ATLAS_2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "BNL_ATLAS_3",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "BNL_ATLAS_4",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "BNL_ATLAS_6",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "BNL_ATLAS_7",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "BNL_ATLAS_8",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "BNL_ITB_Test1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "BNL_BELLE_II_CE_1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "BNL_BELLE_II_CE_2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "BNL-SDCC-CE01",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "BNL-SDCC-CE02",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "BNL-SDCC-CE03",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "BNL-SDCC-CE04",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "BNL-SDCC-CE05",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "BNL-SDCC-CE06",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "BNL_TEST_UST3",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "BNL_Test_2_CE_1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "OSG_US_PSC_Bridges",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "PSC-Bridges",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "NET2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "NET2v6",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "CancerComputer_Hotel_CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "CancerComputer_Kitchener_CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "CancerComputer_MinneUEL_CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "CARDIFF-IGWN-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "CHTC-LHCB-CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "CHTC-canary2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "HOSTED-CE-CHTC-UBUNTU",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "CHTC-ITB-OPEN-SCIENCE-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "CHTC-ITB-SLURM-CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "HOSTED-CE-CHTC-UBUNTU-DEV",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "HOSTED-CE1-OSGDEV-CHTC",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "OSG-ITB-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "WENMR-CE1-OSGDEV-CHTC",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "CHTC-Spark-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "CHTC_OSPOOL-OPEN-SCIENCE-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "cinvestav",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "CIT_CMS_T2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "CIT_CMS_T2B",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "CIT_CMS_T2C",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "LIGO_HANFORD_CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Clarkson-ACRES",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Clarkson-ACRES-CE2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Clemson-Palmetto",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Clemson-Palmetto-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "cns1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "cns2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "CMSHTPC_T3_US_SDSC_osg-comet",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "COMETVCCE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UCSD-Comet",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "ComputeCanada-Cedar",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Crane-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "CYBERA_EDMONTON",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "OSG_US_TCNJ_ELSA",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "TCNJ-ELSA",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "TCNJ-ELSA-CE2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "TCNJ-ELSA-old",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "FANDM-ITS-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "CCJDR-feynman",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "FIU-IRCC-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "FIU_CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "FLTECH",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "FLTECH-ITB",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "FZU_OSG_CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "FZU_OSG_CE2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "FZU_OSG_CE3",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "GC1_CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Georgia_Tech_PACE_CE_1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Georgia_Tech_PACE_CE_2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Georgia_Tech_PACE_CE_ICECUBE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Georgia_Tech_PACE_CE_LIGO",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Georgia_Tech_PACE_CE_OSG",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "GLOW",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "GLOW-CMS",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "GLOW-CONDOR-CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "GLOW-OSG",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "FNAL_GPGRID_CE_03",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "FNAL_GPGRID_CE_04",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "WSU - GRID_ce2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "WSU-GRID",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "WSU-GRID-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "GridUNESP",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "GridUNESP_CENTRAL",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "GSU-ACIDS",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "GSU-ACORE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "GWU-Viper-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Hawaii-Koa-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "HPC4L-CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "NPX",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "IIT_CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "IIT_CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "IIT_CE2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "IllinoisHEP",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "DUNE-IN-TIFR-SIMCLU-CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "IRISHEP-SSL-UCHICAGO",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "ISI",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "ISU-SLURM-CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Jetstream-CE-1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "OSG_US_IU_JETSTREAM",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "OSG_US_TACC_JETSTREAM",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "JINR_Tier2_CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "JINR_Tier2_CE2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "JINR_CONDOR_CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "JLab-FARM-CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "JLab-FARM-CE-3",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "JLab-FARM-CLAS-CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "ILS_compute",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "HOSTED_KANSAS_CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Kennesaw_Dell_Nodes",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Lamar-Cluster",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Langston-Lion-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "LBL_HPCS",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "LBL_HPCS_LRC",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "LC-ITS-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "LEHIGH-HAWK-CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "FNAL_LQ1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "LSU-DB-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "LSU-QB2-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "OSG_US_LSU_QB2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "LSU-SuperMIC-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "LSUHSC-Tigerfish-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "LSUHSC-Tigerfish-CE2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "LTU_T3",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Lucille_CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "LUHEP_OSG",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "LUHEP_OSG2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Maine-ACG-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "MI-HORUS-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "MIT_CMS",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "MIT_CMS_2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "MIT_CMS_3",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "MIT_CMS_T3-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "MSU-DataMachine-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "MSU-OSG",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "MTState-Tempest-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "MWT2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "MWT2-COREOS",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "MWT2_CE_IU",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "MWT2_CE_IU2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "MWT2_CE_UC",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "MWT2_CE_UC2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "MWT2_CE_UIUC",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "MWT2_CE_UIUC2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "MWT2-UIUC",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "IceCube_DK_NBI_T3_CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "NCHC-CMS-CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "NCSU-HPC-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "ND - CAML_GPU",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "ND-CAML-GPU-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "ND-CAML_gpu",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "ND - CMS_GPU",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "NDSU-Thunder",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Nebraska",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "red-gateway1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "red-gateway2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "OSG_US_UWM_NEMO",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UWM-NEMO",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "NERSC-Cori-Haswell",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "NERSC-Cori-KNL",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "NERSC-Perlmutter-CPU",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "NERSC-Perlmutter-GPU",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Nevis",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "NIU_atlas_CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "OSG_US_NMSU_AGGIE_GRID",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "SLATE_US_NMSU_AGGIE_GRID",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "NMSU-Discovery-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "OSG_US_NMSU_DISCOVERY",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "SLATE_US_NMSU_DISCOVERY",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "NUMEP_CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "NWICG_Earth",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "NWICG_NDCMS",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "ODU-Ubuntu",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "ORNL_ALICE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "ORU-Titan-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "OSC_OSG_CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "OSC_OSG_CE_old",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "ASU-DELL_M420",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "OSG_US_ASU_DELL_M420",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "OSG_IN_ICTS_ALICE_HUMPTY",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "OSG_IN_IUCAA_SARATHI",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "OSG_US_DANFORTH_ce04",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "FSU-HNPGRID",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "GLUEX_US_FSU_HNPGRID",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "OSG_US_GSU_ACORE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "OSG_US_NDSU_CCAST_CLUSTER2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "OSG_US_NDSU_CCAST_CLUSTER3",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "OSG_US_USD_LEGACY",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "OSG_US_WSU_GRID",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "osu-cms",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "OU_OCHEP_SWT2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "OU_OSCER_ATLAS",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "OUHEP_ITB",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "OUHEP_OSG",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "PDX-Coeus-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "PNNL_HEP_CE00",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Bridges2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "PSC-Bridges-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "PSC-Bridges2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "PSC-Bridges2-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "PSC-Bridges2-CE2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "PSU-LIGO",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Purdue-Bell",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Purdue-Brown",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Purdue-Hadoop-CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Purdue-Halstead",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Purdue-Hammer",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Purdue-Negishi",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Purdue-Rice",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Purdue-Anvil-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Rhino",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Rhodes-HPC-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "OSG-Rice",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "T2_LV_HPCNET-CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "rutgers-cms",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Sandhills",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "SDSC-Cloud-IceCube-CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "SDSC-Expanse",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "SDSC-Expanse-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "SDSC-PRP-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "SDSC-TS-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "OSG_US_SIUE_CC",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "OSG_US_SIUE_CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "SPRACE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "HOSTED_STANFORD",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "STAR-BNL",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "STAR-OnlinePool",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "SU-ITS-AD-CE4",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "SU-ITS-CE2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "SU-ITS-CE3",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "SU-ITS-CE4",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "SUSQU-ATLAS-T3",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "SUT-OzStar",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Swan-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "SWT2_CPB",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "SWT2_CPB_CE_2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "SWT2_CPB_DEV",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "KISTI_CMS_T3_CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "NEU T3 cluster",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "TACC-Frontera-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "TACC-Frontera-CE2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "OSG_US_TACC_STAMPEDE2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "TACC-Stampede2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "TACC-Stampede2-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "TACC-Stampede2-CE2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "TAMU_BRAZOS_CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "TAMU_Calclab",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "TAMU_Calclab_CE2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "TNTech-Warp1-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "shenma_duhongfei",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "TTU-ANTAEUS",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "TTU-TESTWULF",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Tufts-Cluster",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Tusker-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UA-HPC-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UAH-Voyager-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UC-Denver-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UC_ITB_CONDOR",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UCD",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UChicago_Open_Science_CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UCI-GPATLAS",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UCI-GPATLAS-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UColorado_HEP",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UColorado_ITB",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UConn-HPC_CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UConn-OSG_CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UConn-Xanadu",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UCR-HEP",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UCR-HPCC-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UCSDT2-A",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UCSDT2-B",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UCSDT2-C",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UCSDT2-Cloud",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UCSDT2-D",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UCSDT2-ITB1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UCSDT2-ITB2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UERJ_CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UERJ_CE_2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UFlorida-CMS",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UFlorida-HPC",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UFlorida-HPG2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UGA_Sgrid_CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UGA_Sgrid_Test_CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "SLATE_US_UIUC-ICC-SPT",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "SLATE_US_UIUC_HTC",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UIUC-TGI-RAILS-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UJ-OSG",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "umd-ce",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "umd-ce2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "OSG_US_UMD_SIAB",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UMissHEP",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UMN-CMS-CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UMN-CMS-CE2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "umsnh_ce_se",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UMT-Hellgate-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UND-Talon-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UNM_HPC",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UNR-CC-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Nanobio_CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "uprm-cms-ce",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "USCMS-FNAL-WC1-CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "USCMS-FNAL-WC1-CE2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "USCMS-FNAL-WC1-CE3",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "USCMS-FNAL-WC1-CE4",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "USCMS-FNAL-WC1-OPP1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "USD-Lawrence-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "OSG_US_USF_SC",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "USF",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "USF-SC",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UTA_SWT2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "OSG_US_UUTAH_KINGSPEAK",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "SLATE_US_UUTAH_KINGSPEAK",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "OSG_US_UUTAH_LONEPEAK",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "SLATE_US_UUTAH_LONEPEAK",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "OSG_US_UUTAH_NOTCHPEAK",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "SLATE_US_UUTAH_NOTCHPEAK",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UTC-Epyc",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UW-IT-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "UWEC-BOSE-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Vanderbilt_CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Vanderbilt_CE3",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Vanderbilt_CE4",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Vanderbilt_CE5",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Vanderbilt_CE6",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Vanderbilt_ITB_CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "Vanderbilt_EC2_CE",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "VC3_TEST_CMS",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "VDT-ITB-MADISON",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "VDT-ITB-MADISON-CE2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "VU-AUGIE-CE1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "FNAL_WILSON",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "WISC-ATLAS",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "WISC_ATLAS_1",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "SLAC",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "WT2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "WT2_CE_2",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    },
+    {
+        "resource": "WTAMU-HPC",
+        "nodes": 0,
+        "processors": 0,
+        "ppn": 0
+    }
+]

@@ -5,18 +5,26 @@ RUN yum install -y vim gettext
 RUN dnf module -y reset nodejs
 RUN dnf module -y install nodejs:16
 
-RUN dnf install -y https://github.com/ubccr/xdmod/releases/download/v10.5.0-1.0/xdmod-10.5.0-1.0.el8.noarch.rpm
+#RUN dnf install -y https://github.com/ubccr/xdmod/releases/download/v10.5.0-1.0/xdmod-10.5.0-1.0.el8.noarch.rpm
+RUN dnf install -y https://github.com/eiffel777/xdmod-htcss/releases/download/v10.5.0-rc.1/xdmod-htcss-10.5.0-rc.1.el8.noarch.rpm
+
+RUN php /usr/share/xdmod/tools/etl/etl_overseer.php -p ingest-organizations  -p ingest-resource-types -p xdmod.ingest-resources -a xdmod.staging-ingest-common.resource-specs -p xdmod.hpcdb-ingest-common -p xdmod.hpcdb-xdw-ingest-common
+
+# Give xdmod user a shell to allow for running cron jobs
+RUN usermod -s /bin/bash xdmod
 
 RUN yum install -y mariadb-server sendmail libreoffice chromium-headless php-fpm
 
 COPY ./configuration_files/mysql-confs/mariadb-server.cnf /etc/my.cnf.d/mariadb-server.cnf
-RUN /usr/libexec/mysql-prepare-db-dir mysql mysql
-COPY ./mysql /var/lib/mysql/
-RUN chown -Rh mysql:mysql /var/lib/mysql/
+COPY ./configuration_files/mysql-confs/client.cnf /etc/my.cnf.d/client.cnf
+#RUN /usr/libexec/mysql-prepare-db-dir mysql mysql
+COPY ./mysql /var/lib/mysql/mysql
+RUN chown -Rh mysql:mysql /var/lib/mysql/mysql
+RUN chmod g-w /run
 
 # Create supervisord confs for required daemons
 COPY ./configuration_files/supervisord-confs/mysqld.conf /etc/supervisord.d/mysqld.conf
-COPY ./configuration_files/supervisord-confs/apache-server-runner.conf /etc/supervisord.d/apache-server-runner.conf
+#COPY ./configuration_files/supervisord-confs/apache-server-runner.conf /etc/supervisord.d/apache-server-runner.conf
 COPY ./configuration_files/supervisord-confs/php-fpm-runner.conf /etc/supervisord.d/php-fpm-runner.conf
 
 # Load in xdmod configurations
@@ -41,8 +49,13 @@ RUN mkdir -p /run/php-fpm
 RUN rm -f /etc/php-fpm.d/www.conf
 
 # Load in setup script and supervisor conf for running the script
-COPY ./setup_config /setup_config
+COPY ./setup_and_scripts /setup_and_scripts
+RUN chmod u+x /setup_and_scripts/runtime-container-setup-script.sh
+RUN chmod u+x /setup_and_scripts/slurm_shred_ingest_script.sh
 COPY ./configuration_files/supervisord-confs/setup.conf /etc/supervisord.d/setup.conf
+
+# Load in cronfile for shred/ingest
+COPY ./xdmod_htcss_cron /etc/cron.d/xdmod
 
 # Copy in sendmail configuration file
 COPY ./configuration_files/sendmail-confs/sendmail.mc /etc/mail/sendmail.mc
@@ -53,11 +66,12 @@ ENV XDMOD_ADMIN_LASTNAME='XDMOD_ADMIN_LASTNAME'
 ENV XDMOD_ADMIN_EMAIL='XDMOD_ADMIN_EMAIL'
 ENV XDMOD_ADMIN_USERNAME='XDMOD_ADMIN_USERNAME'
 ENV XDMOD_ADMIN_PASSWORD_PATH='XDMOD_ADMIN_PASSWORD_PATH'
+ENV XDMOD_SLURM_RESOURCE_NAME='XDMOD_SLURM_RESOURCE_NAME'
+ENV XDMOD_SLURM_RESOURCE_CLUSTER='XDMOD_SLURM_RESOURCE_CLUSTER'
 ENV APACHE_HOSTNAME='localhost'
 ENV APACHE_PORT='443'
 ENV APACHE_TLSCERT_PATH='APACHE_TLSCERT_PATH'
 ENV APACHE_TLSKEY_PATH='APACHE_TLSKEY_PATH'
 ENV MYSQL_ROOT_PASS_PATH='MYSQL_ROOT_PASS_PATH'
-ENV MYSQL_SERVERMEM='MYSQL_SERVERMEM'
+ENV MYSQL_SERVER_MEM_GIGS='MYSQL_SERVER_MEM_GIGS'
 ENV PHP_TIMEZONE='America/Chicago'
-ENV TOTAL_SERVER_MEM_GIGS=10
