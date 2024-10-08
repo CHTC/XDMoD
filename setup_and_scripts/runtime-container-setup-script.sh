@@ -25,8 +25,6 @@ chmod o-r $XDMOD_ADMIN_PASSWORD_PATH
 
 supervisorctl start mysql
 
-
-
 if [ "$do_setup_database" = "true" ]; then
     while ! mysqladmin ping  2>/dev/null;
     do
@@ -41,8 +39,7 @@ if [ "$do_setup_database" = "true" ]; then
     DELETE FROM mysql.user WHERE User='root' AND Host NOT IN ('localhost', '127.0.0.1', '::1'); 
     CREATE USER IF NOT EXISTS 'xdmod'@'localhost' identified by '$(cat $XDMOD_ADMIN_PASSWORD_PATH)'; 
     SET PASSWORD FOR 'root'@'localhost' = PASSWORD('$(cat $MYSQL_ROOT_PASS_PATH)'); 
-    FLUSH PRIVILEGES; 
-    GRANT ALL PRIVILEGES ON * . * TO 'xdmod'@'localhost';"
+    FLUSH PRIVILEGES; GRANT ALL PRIVILEGES ON * . * TO 'xdmod'@'localhost';"
     /setup_and_scripts/htcss_shred_ingest_script.sh
 fi
 

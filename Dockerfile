@@ -8,8 +8,6 @@ RUN dnf module -y install nodejs:16
 RUN dnf install -y https://github.com/ubccr/xdmod/releases/download/v10.5.0-1.0/xdmod-10.5.0-1.0.el8.noarch.rpm
 RUN dnf install -y https://github.com/eiffel777/xdmod-htcss/releases/download/v10.5.0-rc.1/xdmod-htcss-10.5.0-rc.1.el8.noarch.rpm
 
-#RUN php /usr/share/xdmod/tools/etl/etl_overseer.php -p ingest-organizations  -p ingest-resource-types -p xdmod.ingest-resources -a xdmod.staging-ingest-common.resource-specs -p xdmod.hpcdb-ingest-common -p xdmod.hpcdb-xdw-ingest-common
-
 # Give xdmod user a shell to allow for running cron jobs
 RUN usermod -s /bin/bash xdmod
 
@@ -66,6 +64,7 @@ ENV XDMOD_ADMIN_LASTNAME='XDMOD_ADMIN_LASTNAME'
 ENV XDMOD_ADMIN_EMAIL='XDMOD_ADMIN_EMAIL'
 ENV XDMOD_ADMIN_USERNAME='XDMOD_ADMIN_USERNAME'
 ENV XDMOD_ADMIN_PASSWORD_PATH='XDMOD_ADMIN_PASSWORD_PATH'
+ENV HTCSS_DATA_LOG_DIR='HTCSS_DATA_LOG_DIR'
 ENV APACHE_HOSTNAME='localhost'
 ENV APACHE_PORT='443'
 ENV APACHE_TLSCERT_PATH='APACHE_TLSCERT_PATH'

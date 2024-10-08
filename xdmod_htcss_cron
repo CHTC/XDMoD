@@ -11,4 +11,4 @@
 0 1 * * * root /setup_and_scripts/htcss_shred_ingest_script.sh
 
 # Refresh web data display after ingesting
-0 3 * * * root httpd -k restart
+0 4 * * * root httpd -k restart
