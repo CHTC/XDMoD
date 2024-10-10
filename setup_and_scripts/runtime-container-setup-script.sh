@@ -40,6 +40,7 @@ if [ "$do_setup_database" = "true" ]; then
     CREATE USER IF NOT EXISTS 'xdmod'@'localhost' identified by '$(cat $XDMOD_ADMIN_PASSWORD_PATH)'; 
     SET PASSWORD FOR 'root'@'localhost' = PASSWORD('$(cat $MYSQL_ROOT_PASS_PATH)'); 
     FLUSH PRIVILEGES; GRANT ALL PRIVILEGES ON * . * TO 'xdmod'@'localhost';"
+    mkdir -p $HTCSS_DATA_LOG_DIR
     /setup_and_scripts/htcss_shred_ingest_script.sh
 fi
 
