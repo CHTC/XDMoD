@@ -54,6 +54,7 @@ RUN rm -f /etc/php-fpm.d/www.conf
 COPY ./setup_and_scripts /setup_and_scripts
 RUN chmod u+x /setup_and_scripts/runtime-container-setup-script.sh
 RUN chmod u+x /setup_and_scripts/slurm_shred_ingest_script.sh
+RUN chown xdmod:xdmod /setup_and_scripts/slurm_shred_ingest_script.sh
 COPY ./configuration_files/supervisord-confs/setup.conf /etc/supervisord.d/setup.conf
 
 # Load in cronfile for shred/ingest
