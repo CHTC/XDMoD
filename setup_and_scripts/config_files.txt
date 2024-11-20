@@ -4,4 +4,5 @@
 /etc/httpd/conf.d/xdmod.conf
 /etc/httpd/conf.d/ssl.conf
 /etc/my.cnf.d/mariadb-server.cnf
+/etc/cron.d/xdmod
 /etc/mail/sendmail.mc

@@ -1,3 +1,5 @@
+HTCSS_DATA_LOG_DIR=$HTCSS_DATA_LOG_DIR
+
 # Every morning at 3:00 AM -- run the report scheduler
 #0 3 * * * xdmod /usr/bin/php /usr/lib64/xdmod/report_schedule_manager.php >/dev/null
 
@@ -8,7 +10,7 @@
 #0 1 1 * * xdmod /usr/lib64/xdmod/update_check.php >/dev/null
 
 # Shred and ingest any new jobs daily
-0 1 * * * root /setup_and_scripts/htcss_shred_ingest_script.sh
+0 1 * * * xdmod /setup_and_scripts/htcss_shred_ingest_script.sh
 
 # Refresh web data display after ingesting
 0 4 * * * root httpd -k restart

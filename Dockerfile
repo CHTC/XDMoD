@@ -6,7 +6,7 @@ RUN dnf module -y reset nodejs
 RUN dnf module -y install nodejs:16
 
 RUN dnf install -y https://github.com/ubccr/xdmod/releases/download/v10.5.0-1.0/xdmod-10.5.0-1.0.el8.noarch.rpm
-RUN dnf install -y https://github.com/eiffel777/xdmod-htcss/releases/download/v10.5.0-rc.1/xdmod-htcss-10.5.0-rc.1.el8.noarch.rpm
+RUN dnf install -y https://github.com/eiffel777/xdmod-htcss/releases/download/v10.5.0-rc.2/xdmod-htcss-10.5.0-rc.2.el8.noarch.rpm
 
 # Give xdmod user a shell to allow for running cron jobs
 RUN usermod -s /bin/bash xdmod
@@ -15,14 +15,13 @@ RUN yum install -y mariadb-server sendmail libreoffice chromium-headless php-fpm
 
 COPY ./configuration_files/mysql-confs/mariadb-server.cnf /etc/my.cnf.d/mariadb-server.cnf
 COPY ./configuration_files/mysql-confs/client.cnf /etc/my.cnf.d/client.cnf
-#RUN /usr/libexec/mysql-prepare-db-dir mysql mysql
 COPY ./mysql /var/lib/mysql/mysql
 RUN chown -Rh mysql:mysql /var/lib/mysql/mysql
+RUN chown mysql:mysql /var/log/mariadb/mariadb.log
 RUN chmod g-w /run
 
 # Create supervisord confs for required daemons
 COPY ./configuration_files/supervisord-confs/mysqld.conf /etc/supervisord.d/mysqld.conf
-#COPY ./configuration_files/supervisord-confs/apache-server-runner.conf /etc/supervisord.d/apache-server-runner.conf
 COPY ./configuration_files/supervisord-confs/php-fpm-runner.conf /etc/supervisord.d/php-fpm-runner.conf
 
 # Load in xdmod configurations
@@ -50,6 +49,7 @@ RUN rm -f /etc/php-fpm.d/www.conf
 COPY ./setup_and_scripts /setup_and_scripts
 RUN chmod u+x /setup_and_scripts/runtime-container-setup-script.sh
 RUN chmod u+x /setup_and_scripts/htcss_shred_ingest_script.sh
+RUN chown xdmod:xdmod /setup_and_scripts/htcss_shred_ingest_script.sh
 COPY ./configuration_files/supervisord-confs/setup.conf /etc/supervisord.d/setup.conf
 
 # Load in cronfile for shred/ingest
