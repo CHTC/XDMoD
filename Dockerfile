@@ -17,6 +17,7 @@ COPY ./configuration_files/mysql-confs/mariadb-server.cnf /etc/my.cnf.d/mariadb-
 COPY ./configuration_files/mysql-confs/client.cnf /etc/my.cnf.d/client.cnf
 COPY ./mysql /var/lib/mysql/mysql
 RUN chown -Rh mysql:mysql /var/lib/mysql/mysql
+RUN touch /var/log/mariadb/mariadb.log
 RUN chown mysql:mysql /var/log/mariadb/mariadb.log
 RUN chmod g-w /run
 
