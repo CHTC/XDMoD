@@ -38,8 +38,7 @@ if [ "$do_setup_database" = "true" ]; then
     mysql --password="" -Be "
     DELETE FROM mysql.user WHERE User='root' AND Host NOT IN ('localhost', '127.0.0.1', '::1'); 
     CREATE USER IF NOT EXISTS 'xdmod'@'localhost' identified by '$(cat $XDMOD_ADMIN_PASSWORD_PATH)'; 
-    SET PASSWORD FOR 'root'@'localhost' = PASSWORD('$(cat $MYSQL_ROOT_PASS_PATH)'); 
-    FLUSH PRIVILEGES; GRANT ALL PRIVILEGES ON * . * TO 'xdmod'@'localhost';"
+    SET PASSWORD FOR 'root'@'localhost' = PASSWORD('$(cat $MYSQL_ROOT_PASS_PATH)'); GRANT ALL PRIVILEGES ON * . * TO 'xdmod'@'localhost'; FLUSH PRIVILEGES;"
 
     mkdir -p $HTCSS_DATA_LOG_DIR
     /setup_and_scripts/htcss_shred_ingest_script.sh
