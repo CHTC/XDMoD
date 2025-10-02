@@ -1,6 +1,6 @@
 FROM hub.opensciencegrid.org/opensciencegrid/software-base:23-el8-release
 
-RUN yum install -y vim gettext
+RUN dnf install -y vim gettext
 
 RUN dnf module -y reset nodejs
 RUN dnf module -y install nodejs:16
@@ -11,7 +11,7 @@ RUN dnf install -y https://github.com/eiffel777/xdmod-htcss/releases/download/v1
 # Give xdmod user a shell to allow for running cron jobs
 RUN usermod -s /bin/bash xdmod
 
-RUN yum install -y mariadb-server sendmail libreoffice chromium-headless php-fpm
+RUN dnf install -y mariadb-server sendmail libreoffice chromium-headless php-fpm
 
 COPY ./configuration_files/mysql-confs/mariadb-server.cnf /etc/my.cnf.d/mariadb-server.cnf
 COPY ./configuration_files/mysql-confs/client.cnf /etc/my.cnf.d/client.cnf
