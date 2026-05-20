@@ -1,17 +1,26 @@
-FROM hub.opensciencegrid.org/opensciencegrid/software-base:23-el8-release
+FROM hub.opensciencegrid.org/opensciencegrid/software-base:25-el8-release
 
-RUN yum install -y vim gettext
+RUN dnf install -y vim gettext
 
 RUN dnf module -y reset nodejs
 RUN dnf module -y install nodejs:16
 
-RUN dnf install -y https://github.com/ubccr/xdmod/releases/download/v10.5.0-1.0/xdmod-10.5.0-1.0.el8.noarch.rpm
+RUN dnf module -y reset php
+RUN dnf module -y enable php:7.4
+
+RUN dnf install -y mariadb-server sendmail libreoffice chromium-headless php-fpm
+# New v11 PHP Pear package pre-reqs 
+RUN dnf install -y php make libzip-devel php-pear php-devel
+
+# Install Mongodb PHP Pear Package, required for xdmod v11 
+RUN yes '' | pecl install mongodb-1.18.1
+
+RUN dnf install -y https://github.com/ubccr/xdmod/releases/download/v11.0.3-2/xdmod-11.0.3-2.el8.noarch.rpm
+# Old version of the htccs plugin is said to work just fine
 RUN dnf install -y https://github.com/eiffel777/xdmod-htcss/releases/download/v10.5.0-rc.2/xdmod-htcss-10.5.0-rc.2.el8.noarch.rpm
 
 # Give xdmod user a shell to allow for running cron jobs
 RUN usermod -s /bin/bash xdmod
-
-RUN yum install -y mariadb-server sendmail libreoffice chromium-headless php-fpm
 
 COPY ./configuration_files/mysql-confs/mariadb-server.cnf /etc/my.cnf.d/mariadb-server.cnf
 COPY ./configuration_files/mysql-confs/client.cnf /etc/my.cnf.d/client.cnf
