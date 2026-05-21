@@ -9,8 +9,5 @@ HTCSS_DATA_LOG_DIR=$HTCSS_DATA_LOG_DIR
 # Check for updates (monthly).
 #0 1 1 * * xdmod /usr/lib64/xdmod/update_check.php >/dev/null
 
-# Shred and ingest any new jobs daily
-0 1 * * * xdmod /setup_and_scripts/htcss_shred_ingest_script.sh
-
-# Refresh web data display after ingesting
-0 4 * * * root httpd -k restart
+# Shred and ingest any new jobs daily and Refresh web data display after ingesting
+0 1 * * * xdmod /setup_and_scripts/htcss_shred_ingest_script.sh && sudo httpd -k restart
