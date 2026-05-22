@@ -2,6 +2,10 @@ FROM hub.opensciencegrid.org/opensciencegrid/software-base:25-el8-release
 
 RUN dnf install -y vim gettext
 
+# package requirements and versions from:
+# https://open.xdmod.org/10.5/software-requirements.html
+# https://open.xdmod.org/11.0/upgrade.html
+
 RUN dnf module -y reset nodejs
 RUN dnf module -y install nodejs:16
 
